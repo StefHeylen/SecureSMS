@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/layout_border"
+    android:onClick="launchNewSms" >
+        
+        <ImageView 
+            android:contentDescription="@string/conversations_new_message"
+            android:src="@drawable/add_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            
+            
+            />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/conversations_new_message"
+            android:textSize="20sp" />
+        
+    </LinearLayout>
+    
+    <ListView
+        android:id="@android:id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:clickable="true" >
+    </ListView>
+
+</LinearLayout> 

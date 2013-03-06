@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <EditText
+        android:id="@id/editTextPhoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone" 
+        android:layout_below="@id/relativeLayout1"
+        android:hint="@string/hint_recipient" >
+    </EditText>
+    
+     <ImageButton
+        android:id="@id/imageButtonContactList"
+        android:contentDescription="@string/image_contact_list"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/editTextPhoneNo"
+        android:onClick="openContactList"
+        android:src="@drawable/image_contactlist_normal"
+            />
+ 
+    <EditText
+        android:id="@id/editTextSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:inputType="textMultiLine"
+        android:gravity="top" 
+        android:hint="@string/hint_message" 
+        android:layout_below="@id/editTextPhoneNo" />
+ 
+    <Button
+        android:id="@id/buttonSend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:layout_below="@id/editTextSMS" />
+ 
+</RelativeLayout>

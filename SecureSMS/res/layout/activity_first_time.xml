@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstTimeActivity" >
+
+    <TextView
+        android:id="@id/textViewSelectCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/select_country" />
+    
+    <Spinner
+        android:id="@id/spinner1"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:entries="@array/country_arrays"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="30"
+        android:layout_below="@id/textViewSelectCountry"
+         />
+    
+    <TextView
+        android:id="@id/textViewEnterPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinner1"
+        android:layout_marginTop="20dp"
+        android:text="@string/enter_phone_number" />
+
+    <EditText
+        android:id="@id/editTextPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:layout_below="@id/textViewEnterPhoneNumber"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@id/textViewEnterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:text="@string/enter_password" />
+
+    <EditText
+        android:id="@id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEnterPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+    
+    <TextView
+        android:id="@id/textViewConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextPassword"
+        android:text="@string/confirm_password" />
+
+    <EditText
+        android:id="@id/editTextConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+     <Button
+        android:id="@id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="5"
+        android:onClick="handleInput"
+        android:text="@string/next" />
+
+</RelativeLayout>
+
+  

@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationActivity" >
+
+    <TextView 
+        android:id="@id/textViewEnterVerificationCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/verification_code" />
+    
+    <EditText 
+        android:id="@id/editTextEnterVerificationCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_below="@id/textViewEnterVerificationCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10" />
+    
+    <Button
+        android:id="@id/buttonValidateCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEnterVerificationCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="5"
+        android:onClick="verifyCode"
+        android:text="@string/validate_code" />
+    
+</RelativeLayout>

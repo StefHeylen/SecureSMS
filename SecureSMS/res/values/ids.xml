@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- SendSMSActivity -->
+    <item name="relativeLayout1" type="id"></item>
+    <item name="linearLayout1" type="id"></item>
+    <item name="linearLayout2" type="id"></item>
+    <item name="linearLayout3" type="id"></item>
+    <item name="textViewPhoneNo" type="id"></item>
+    <item name="editTextPhoneNo" type="id"></item>
+    <item name="textViewSMS" type="id"></item>
+    <item name="editTextSMS" type="id"></item>
+    <item name="buttonSend" type="id"></item>
+    <item name="imageButtonContactList" type="id"></item>
+    
+    <!-- FirstTimeActivity -->
+    <item name="textViewEnterPassword" type="id"></item>
+    <item name="textViewConfirmPassword" type="id"></item>
+    <item name="editTextPassword" type="id"></item>
+    <item name="editTextConfirmPassword" type="id"></item>
+    <item name="textViewEnterPhoneNumber" type="id"></item>
+    <item name="editTextPhoneNumber" type="id"></item>
+    <item name="buttonNext" type="id"></item>
+    <item name="textViewSelectCountry" type="id"></item>
+    <item name="spinner1" type="id"></item>
+    <item name="spinner2" type="id"></item>
+    
+    
+    <!-- InboxActivity -->
+    <item name="relativeLayout2" type="id"></item>
+    <item name="name_entry" type="id"></item>
+    
+    <!-- VerificationActivity -->
+    <item name="textViewEnterVerificationCode" type="id"></item>
+    <item name="editTextEnterVerificationCode" type="id"></item>
+    <item name="buttonValidateCode" type="id"></item>
+    
+    
+</resources>
