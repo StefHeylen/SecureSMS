@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">SecureSMS</string>
+<<<<<<< HEAD
     <string name="send">Send</string>
     <string name="menu_settings">Settings</string>
     <string name="hint_recipient">Please enter recipient here</string>
@@ -262,5 +263,9 @@
     </string-array>
 
     <string name="title_activity_verification">VerificationActivity</string>
+=======
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+>>>>>>> a2c6033b519be51a114f15b88c2c3b2bfab36211
 
 </resources>
