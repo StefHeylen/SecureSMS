@@ -36,7 +36,7 @@ public class InboxActivity extends ListActivity {
 		setContentView(R.layout.activity_inbox);
 		
 		Bundle b = getIntent().getExtras();
-		selected = b.getString("name", "none");
+		selected = b.getString("name");
 		isContact = b.getBoolean("contact");
 		this.createListView();
 		
@@ -46,7 +46,7 @@ public class InboxActivity extends ListActivity {
 		Uri mSmsinboxQueryUri = Uri.parse("content://sms/inbox");
 		// Alle kolommen die worden opgehaald (later eventueel te verwijderen kolommen als er onnodige bijzijn)
 		Cursor cursorInbox = getContentResolver().query(mSmsinboxQueryUri, columns,
-				null, null, "date asc");
+				null, null, "date desc");
 		return cursorInbox;
 	}
 	
@@ -54,7 +54,7 @@ public class InboxActivity extends ListActivity {
 		Uri mSmsSentQueryUri = Uri.parse("content://sms/sent");
 		// Alle kolommen die worden opgehaald (later eventueel te verwijderen kolommen als er onnodige bijzijn) 
 		Cursor cursorSent = getContentResolver().query(mSmsSentQueryUri, columns,
-				null, null, "date asc");
+				null, null, "date desc");
 		return cursorSent;
 	}
 	

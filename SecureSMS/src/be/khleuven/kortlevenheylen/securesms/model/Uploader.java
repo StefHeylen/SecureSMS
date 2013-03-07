@@ -16,13 +16,13 @@ public class Uploader {
     /**
      * @param args the command line arguments
      */
-    public static void verifyCode(String number, String code) {
+    public static void verifyCode(String number, String code, String pathInternalStorage) {
 
         try {
             //generate keypair
-            String path = "";
+            String path = pathInternalStorage;
             KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
-
+     
             keyGen.initialize(2048);
             KeyPair keyPair = keyGen.genKeyPair();
 

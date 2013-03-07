@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">SecureSMS</string>
-<<<<<<< HEAD
     <string name="send">Send</string>
     <string name="menu_settings">Settings</string>
     <string name="hint_recipient">Please enter recipient here</string>
@@ -21,6 +20,8 @@
     <string name="select_country">Please select your country:</string>
     <string name="verification_code">Enter your verification code: </string>
 	<string name="validate_code">Validate</string>
+	<string name="unlockMessages">Unlock</string>
+	<string name="unlockText">Enter your password to unlock your messages: </string>
 
     <string-array name="country_arrays">
         <item>Afghanistan</item>
@@ -263,9 +264,5 @@
     </string-array>
 
     <string name="title_activity_verification">VerificationActivity</string>
-=======
-    <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
->>>>>>> a2c6033b519be51a114f15b88c2c3b2bfab36211
 
 </resources>

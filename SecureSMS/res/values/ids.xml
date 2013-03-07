@@ -34,5 +34,11 @@
     <item name="editTextEnterVerificationCode" type="id"></item>
     <item name="buttonValidateCode" type="id"></item>
     
+    <!-- PasswordActivity -->
+    <item name="editTextUnlockPassword" type="id"></item>
+    <item name="buttonUnlock" type="id"></item>
+    <item name="textViewUnlockPassword" type="id"></item>
+    
+    
     
 </resources>

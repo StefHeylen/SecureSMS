@@ -45,6 +45,7 @@ import org.w3c.dom.Element;
 
 import be.khleuven.kortlevenheylen.securesms.R;
 import be.khleuven.kortlevenheylen.securesms.model.CheckNumber;
+import be.khleuven.kortlevenheylen.securesms.model.Popup;
 import be.khleuven.kortlevenheylen.securesms.model.StringOutputStream;
 
 import android.net.ConnectivityManager;
@@ -259,36 +260,15 @@ public class FirstTimeActivity extends Activity {
 			}
 			else {
 				// popup da zegt da ze alles moete invulle
-				this.showPopup("Please fill in all fields");
+				Popup.showPopup("Please fill in all fields", this);
 			}
 				
 
 		} else {
-			this.showPopup("Networkconnectivity is required to proceed");
+			Popup.showPopup("Networkconnectivity is required to proceed", this);
 		}
 	}
-
-	private void showPopup(String message) {
-		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-		// set dialog message
-		alertDialogBuilder
-			.setMessage(message)
-			.setCancelable(false)
-			.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-				public void onClick(DialogInterface dialog,int id) {
-					// if this button is clicked, close
-					// current activity
-					dialog.cancel();
-				}
-			});
 		
-		// create alert dialog
-		AlertDialog alertDialog = alertDialogBuilder.create();
-
-		// show it
-		alertDialog.show();
-	}
-	
 	private boolean hasNetworkConnectivity() {
 		ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();

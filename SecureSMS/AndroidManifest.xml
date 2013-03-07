@@ -8,7 +8,6 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.WRITE_SMS" />
@@ -20,20 +19,16 @@
 
     <supports-screens android:normalScreens="true" />
 
-=======
->>>>>>> a2c6033b519be51a114f15b88c2c3b2bfab36211
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-<<<<<<< HEAD
         <receiver android:name="be.khleuven.kortlevenheylen.securesms.model.SmsReceiver" >
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
-
 
         <activity
             android:name="be.khleuven.kortlevenheylen.securesms.activities.FirstTimeActivity"
@@ -44,51 +39,43 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="be.khleuven.kortlevenheylen.securesms.activities.VerificationActivity"
-            android:label="@string/title_activity_verification" 
+            android:label="@string/title_activity_verification"
             android:parentActivityName="be.khleuven.kortlevenheylen.securesms.activities.ConversationsActivity" >
             <meta-data
-	            android:name="android.support.PARENT_ACTIVITY"
-	            android:value="be.khleuven.kortlevenheylen.securesms.activities.ConversationsActivity" />
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.khleuven.kortlevenheylen.securesms.activities.ConversationsActivity" />
         </activity>
-        
         <activity
             android:name="be.khleuven.kortlevenheylen.securesms.activities.ConversationsActivity"
             android:label="@string/title_activity_conversations" >
-=======
-        <activity
-            android:name="be.khleuven.kortlevenheylen.securesms.MainActivity"
-            android:label="@string/app_name" >
->>>>>>> a2c6033b519be51a114f15b88c2c3b2bfab36211
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        
         <activity
             android:name="be.khleuven.kortlevenheylen.securesms.activities.InboxActivity"
             android:label="@string/title_activity_inbox" >
             <meta-data
-	            android:name="android.support.PARENT_ACTIVITY"
-	            android:value="be.khleuven.kortlevenheylen.securesms.activities.ConversationsActivity" />
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.khleuven.kortlevenheylen.securesms.activities.ConversationsActivity" />
         </activity>
-        
-         <activity
+        <activity
             android:name="be.khleuven.kortlevenheylen.securesms.activities.SendSMSActivity"
-            android:label="@string/app_name" 
+            android:label="@string/app_name"
             android:parentActivityName="be.khleuven.kortlevenheylen.securesms.activities.ConversationsActivity" >
-        	<meta-data
-	            android:name="android.support.PARENT_ACTIVITY"
-	            android:value="be.khleuven.kortlevenheylen.securesms.activities.ConversationsActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.khleuven.kortlevenheylen.securesms.activities.ConversationsActivity" />
         </activity>
-        
-=======
->>>>>>> a2c6033b519be51a114f15b88c2c3b2bfab36211
+        <activity
+            android:name="be.khleuven.kortlevenheylen.securesms.activities.PasswordActivity"
+            android:label="@string/title_activity_password"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
     </application>
 
 </manifest>
